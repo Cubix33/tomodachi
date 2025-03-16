@@ -1,0 +1,28 @@
+import pickle
+import pandas as pd
+
+with open("severity_model.pkl", "rb") as f:
+    severity_model = pickle.load(f)
+
+with open("time_model.pkl", "rb") as f:
+    time_model = pickle.load(f)
+
+data = pd.DataFrame({
+    'Age': [30],
+    'Gender': [1],
+    'Previous_Visits': [5],
+    'Symptoms': [2],
+    'Prev_Severity': [3],
+    'Department': [1],
+    
+})
+X_severity = data[['Age', 'Gender', 'Previous_Visits', 'Symptoms','Prev_Severity']]
+
+predicted_severity = severity_model.predict(X_severity)
+print("Predicted Severity:", predicted_severity[0])
+
+data['Predicted_Severity'] = predicted_severity
+X_time = data[['Predicted_Severity', 'Department','Age', 'Gender', 'Previous_Visits', 'Symptoms']]
+
+predicted_time = time_model.predict(X_time)
+print("Predicted Consultation Time:", predicted_time[0])
