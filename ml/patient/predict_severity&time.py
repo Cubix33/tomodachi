@@ -2,10 +2,10 @@ import pickle
 import pandas as pd
 from sklearn.preprocessing import OneHotEncoder, LabelEncoder
 
-with open(r"H:\New folder (4)\tomodachi\patient\severity_model.pkl", "rb") as f:
+with open(r"H:\New folder (4)\tomodachi\ml\patient\severity_model.pkl", "rb") as f:
     severity_model = pickle.load(f)
 
-with open(r"H:\New folder (4)\tomodachi\patient\time_model.pkl", "rb") as f:
+with open(r"H:\New folder (4)\tomodachi\ml\patient\time_model.pkl", "rb") as f:
     time_model = pickle.load(f)
 disease_severity = {'None':0,
     'Type 2 Diabetes': 3, 'Hypertension': 2, 'Coronary Artery Disease': 4, 'COPD': 4,
@@ -154,12 +154,12 @@ symptoms_data = {
     "Zygoma Pain": {"Department": "Dentistry", "Severity": 3}
 }
 data = pd.DataFrame({
-    'Age': [30],
-    'Gender': 'Male',
-    'Previous_Visits': [5],
+    'Age': [89],
+    'Gender': 'Female',
+    'Previous_Visits': [3],
     'Symptoms': "Chest Pain",
-    'Prev_Disease': 'Breast Cancer',
-    'Department': "Dentistry",
+    'Prev_Disease': 'HIV/AIDS',
+    'Department': "Cardiology",
     
 })
 data["Prev_Severity"] = [disease_severity[disease] for disease in data['Prev_Disease']]
