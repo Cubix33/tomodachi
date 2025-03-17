@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Login</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/patientLogin.css">
+
+    <!-- Font Awesome Icon Kit -->
+    <script src="https://kit.fontawesome.com/c45e3ad131.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand is-flex is-justify-content-space-between">
+            <a class="navbar-item title is-3 logo ostrich" href="/">
+                <figure class=" image">
+                    <img class="logoImg" src="/images/logo.png" alt="">
+                </figure>
+                <strong>APT</strong>
+            </a>
+
+
+            <div class="buttons is-hidden-desktop mx-2">
+                <a class="button " href="https://github.com/Cubix33/tomodachi">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+
+
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button " href="https://github.com/Cubix33/tomodachi">
+                            <span class="icon">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <section class="section mainContent is-fullheight is-flex is-flex-direction-column is-justify-content-center">
+        <div class="container has-text-centered my-5 is-flex-grow-0" id="mainContainer">
+
+           
+
+            <div class="patientSignupForm hiddenForm ">
+                <h3 class="is-3 title">Signup</h3>
+                <p class="subtitle has-text-right-desktop has-text-danger my-1">Have A Account? <a class="has-text-success is-underlined " id="showLogin">Login Now</a></p>
+
+                <div class="columns is-multiline">
+                    <div class="column">
+
+                        <div class="field has-text-left">
+                            <label for="" class="label">Name</label>
+                            <div class="control has-icons-left">
+                                <input class="input" type="text" name="name" id="name">
+                                <span class="icon is-small is-left">
+                                    <i class="fa-solid fa-pen-nib"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="field has-text-left">
+                            <label for="" class="label">Email</label>
+                            <div class="control has-icons-left">
+                                <input class="input" type="email" name="email" id="signupEmail">
+                                <span class="icon is-small is-left">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="field has-text-left">
+                            <label for="" class="label">Password</label>
+                            <div class="control has-icons-left">
+                                <input class="input" type="password" name="password" id="signupPassword">
+                                <span class="icon is-small is-left">
+                                    <i class="fa-solid fa-key"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="column">
+                        <div class="field has-text-left">
+                            <label for="" class="label">Gender</label>
+                            <p class="control has-icons-left">
+                                <span class="select is-fullwidth">
+                                    <select name="" id="gender">
+                                        <option value="N">Select Gender</option>
+                                        <option value="M">Male</option>
+                                        <option value="F">Female</option>
+                                        <option value="O">Non Binary</option>
+                                    </select>
+                                </span>
+                                <span class="icon is-small is-left">
+                                    <i class="fa-solid fa-venus-mars"></i>
+                                </span>
+                            </p>
+                        </div>
+
+                        <div class="field has-text-left">
+                            <label for="" class="label">Age</label>
+                            <div class="control has-icons-left">
+                                <input class="input" type="number" name="age" id="age">
+                                <span class="icon is-small is-left">
+                                    <i class="fa-solid fa-baby-carriage"></i>
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <div class="field has-text-left">
+                            <label for="" class="label">Medical History</label>
+                            <p class="control has-icons-left">
+                                <span class="select is-fullwidth">
+                                    <select name="" id="medicalHistory">
+                                        <option value="">Select Medical History</option>
+                                        <option value="Type 2 Diabetes">Type 2 Diabetes</option>
+                                        <option value="Hypertension">Hypertension</option>
+                                        <option value="Coronary Artery Disease">Coronary Artery Disease</option>
+                                        <option value="COPD">COPD</option>
+                                        <option value="Chronic Kidney Disease">Chronic Kidney Disease</option>
+                                        <option value="HIV/AIDS">HIV/AIDS</option>
+                                        <option value="Rheumatoid Arthritis">Rheumatoid Arthritis</option>
+                                        <option value="Osteoporosis">Osteoporosis</option>
+                                        <option value="Asthma">Asthma</option>
+                                        <option value="COVID-19 (Chronic)">COVID-19 (Chronic)</option>
+                                        <option value="Cirrhosis">Cirrhosis</option>
+                                        <option value="Heart Failure">Heart Failure</option>
+                                        <option value="Stroke History">Stroke History</option>
+                                        <option value="Dementia">Dementia</option>
+                                        <option value="Epilepsy">Epilepsy</option>
+                                        <option value="Psoriasis">Psoriasis</option>
+                                        <option value="Lupus">Lupus</option>
+                                        <option value="Multiple Sclerosis">Multiple Sclerosis</option>
+                                        <option value="Parkinson's Disease">Parkinson's Disease</option>
+                                        <option value="IBD (Crohn's/Colitis)">IBD (Crohn's/Colitis)</option>
+                                        <option value="Bipolar Disorder">Bipolar Disorder</option>
+                                        <option value="Schizophrenia">Schizophrenia</option>
+                                        <option value="Sleep Apnea">Sleep Apnea</option>
+                                        <option value="Osteoarthritis">Osteoarthritis</option>
+                                        <option value="Chronic Pancreatitis">Chronic Pancreatitis</option>
+                                        <option value="Hepatitis C">Hepatitis C</option>
+                                        <option value="Sickle Cell Anemia">Sickle Cell Anemia</option>
+                                        <option value="Cystic Fibrosis">Cystic Fibrosis</option>
+                                        <option value="Pulmonary Fibrosis">Pulmonary Fibrosis</option>
+                                        <option value="Thyroid Cancer">Thyroid Cancer</option>
+                                        <option value="Breast Cancer">Breast Cancer</option>
+                                        <option value="Prostate Cancer">Prostate Cancer</option>
+                                        <option value="Melanoma">Melanoma</option>
+                                        <option value="Glaucoma">Glaucoma</option>
+                                        <option value="Macular Degeneration">Macular Degeneration</option>
+                                        <option value="Tuberculosis">Tuberculosis</option>
+                                        <option value="Chronic Migraine">Chronic Migraine</option>
+                                        <option value="PTSD">PTSD</option>
+                                        <option value="Obesity (Class III)">Obesity (Class III)</option>
+                                        <option value="Peripheral Neuropathy">Peripheral Neuropathy</option>
+                                        <option value="Gout">Gout</option>
+                                        <option value="Ankylosing Spondylitis">Ankylosing Spondylitis</option>
+                                        <option value="Autism Spectrum">Autism Spectrum</option>
+                                        <option value="Fibromyalgia">Fibromyalgia</option>
+                                        <option value="Endometriosis">Endometriosis</option>
+                                        <option value="Chronic `Sinusitis">Chronic Sinusitis</option>
+                                        <option value="Celiac Disease">Celiac Disease</option>
+                                        <option value="Hemophilia">Hemophilia</option>
+                                        <option value="Sarcoidosis">Sarcoidosis</option>
+                                        <option value="Tinnitus">Tinnitus</option>
+                                        
+                                    </select>
+                                </span>
+                                <span class="icon is-small is-left">
+                                    <i class="fa-solid fa-venus-mars"></i>
+                                </span>
+                            </p>
+                        </div>
+
+
+                      
+                    </div>
+
+
+                </div>
+
+                <button type="submit" class="button is-success is-dark is-fullwidth disabled" id="signUpBtn">Signup</button>
+
+
+            </div>
+
+            <div class="patientLoginForm">
+                <h3 class="is-3 title">Login</h3>
+                <p class="subtitle  has-text-danger has-text-right-desktop my-1">Don't Have A Account Yet? <a class="has-text-success is-underlined " id="showSignup">Signup Now</a></p>
+                <div class="field has-text-left">
+                    <label for="" class="label">Email</label>
+                    <div class="control has-icons-left">
+                        <input class="input" type="email" name="email" id="email">
+                        <span class="icon is-small is-left">
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="field has-text-left">
+                    <label for="" class="label">Password</label>
+                    <div class="control has-icons-left">
+                        <input class="input" type="password" name="password" id="password">
+                        <span class="icon is-small is-left">
+                            <i class="fa-solid fa-key"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <button id='loginBtn' type="submit" class="button is-success is-dark is-fullwidth">Login</button>
+
+                
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p class="subtitle">
+                <strong>APT</strong> by Anshika, Harshdip & Pratyaksh
+            </p>
+            <p><a target="_blank" href="https://icons8.com/icon/r9qA6fLGZtdf/music-robot">Music Robot</a> icon by <a
+                    target="_blank" href="https://icons8.com">Icons8</a></p>
+        </div>
+    </footer>
+
+
+</body>
+
+<!-- Patient JS -->
+<script src="js/patientLogin.js"></script>
+
+</html>

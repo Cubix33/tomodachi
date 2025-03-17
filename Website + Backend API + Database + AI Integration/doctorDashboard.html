@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Login</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+
+    <!-- Font Awesome Icon Kit -->
+    <script src="https://kit.fontawesome.com/c45e3ad131.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand is-flex is-justify-content-space-between">
+            <a class="navbar-item title is-3 logo ostrich" href="/">
+                <figure class=" image">
+                    <img class="logoImg" src="/images/logo.png" alt="">
+                </figure>
+                <strong>APT</strong>
+            </a>
+
+
+            <div class="buttons is-hidden-desktop mx-2">
+                <button class="button ">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>GitHub</span>
+                </button>
+            </div>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+
+
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <button class="button ">
+                            <span class="icon">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span>GitHub</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <section class="section mainContent is-fullheight is-flex is-flex-direction-column is-justify-content-center">
+        <div class="container has-text-centered my-5 is-flex-grow-0">
+            <h1 class="is-1 title">Welcome, Prtyksh</h1>
+            <p class="subtitle">Doctor ID: A78, Department: PagalKhana</p>
+
+            <div class="overView">
+                <article class="message is-primary">
+                    <div class="message-header ">
+                        <p>Your Current Appointment</p>
+                    </div>
+                    <div class="message-body">
+                        No Currently Ongoing Appointment
+                    </div>
+                </article>
+
+                <article class="message is-info">
+                    <div class="message-header ">
+                        <p>Your Upcoming Appointments</p>
+                    </div>
+                    <div class="message-body">
+                        No Upcoming Appointments
+                    </div>
+                </article>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <button class="js-modal-trigger" data-target="modalConfirmDelete">
+        Open JS example modal
+    </button>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p class="subtitle">
+                <strong>APT</strong> by Anshika, Harshdip & Pratyaksh
+            </p>
+            <p><a target="_blank" href="https://icons8.com/icon/r9qA6fLGZtdf/music-robot">Music Robot</a> icon by <a
+                    target="_blank" href="https://icons8.com">Icons8</a></p>
+        </div>
+    </footer>
+
+
+    <!-- Delete Appointment Modal -->
+    <div id="modalConfirmDelete" class="modal">
+        <div class="modal-background"></div>
+
+        <div class="modal-content">
+            <article class="message is-primary">
+                <div class="message-header">
+                    <p class="is-size-4">Mark Appointment as Done?</p>
+                    <button class="delete" aria-label="delete"></button>
+                </div>
+                <div class="message-body is-size-5">
+
+                    <!-- Patient Name Summary -->
+                    <div class="columns">
+                        <div class="column">
+                            Patient Name:
+                        </div>
+                        <div class="column">
+                            <div class="tag is-warning is-size-5">Nausea</div>
+                        </div>
+                    </div>
+
+                    <!-- Patient ID Selected -->
+                    <div class="columns">
+                        <div class="column">
+                            Patient ID:
+                        </div>
+                        <div class="column">
+                            <div class="tag is-warning is-size-5">BioChemical Warfare</div>
+                        </div>
+                    </div>
+
+                    <!-- Time Slot Selected -->
+                    <div class="columns">
+                        <div class="column">
+                            Time Slot Selected:
+                        </div>
+                        <div class="column">
+                            <div class="tag is-warning is-size-6">1130-1350 Hrs</div>
+                        </div>
+                    </div>
+
+                    <button class="button is-success is-dark is-fullwidth">
+                        Mark Appointment As Finished
+                    </button>
+                </div>
+            </article>
+        </div>
+
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+
+</body>
+
+
+<!-- Modal JS -->
+<script src="js/modal.js"></script>
+
+</html>

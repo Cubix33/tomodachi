@@ -1,0 +1,3 @@
+id,Patient ID,Doctor ID,severity,Department,Scheduled Time
+27,18,23,6,Urology,08:00 AM - 08:15 AM
+28,18,3,6,General Medicine,08:00 AM - 08:15 AM

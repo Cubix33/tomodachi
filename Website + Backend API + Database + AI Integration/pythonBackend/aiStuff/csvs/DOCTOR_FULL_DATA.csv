@@ -1,0 +1,53 @@
+doctorid,firstshiftstart,firstshiftend,secondshiftstart,secondshiftend,name,department
+1,08:00:00,13:00:00,14:00:00,19:00:00,Leo Tolstoy,Neurology
+2,09:00:00,14:00:00,15:00:00,20:00:00,Fyodor Dostoevsky,Neurology
+3,08:00:00,13:00:00,14:00:00,19:00:00,Mark Twain,General Medicine
+4,09:00:00,14:00:00,15:00:00,20:00:00,Charles Dickens,General Medicine
+5,08:00:00,13:00:00,14:00:00,19:00:00,Virginia Woolf,Pulmonology
+6,09:00:00,14:00:00,15:00:00,20:00:00,George Orwell,Pulmonology
+7,08:00:00,13:00:00,14:00:00,19:00:00,Jane Austen,Cardiology
+8,09:00:00,14:00:00,15:00:00,20:00:00,Emily Bronte,Cardiology
+9,08:00:00,13:00:00,14:00:00,19:00:00,Franz Kafka,Gastroenterology
+10,09:00:00,14:00:00,15:00:00,20:00:00,Gabriel Garcia Marquez,Gastroenterology
+11,08:00:00,13:00:00,14:00:00,19:00:00,Ernest Hemingway,Rheumatology
+12,09:00:00,14:00:00,15:00:00,20:00:00,F. Scott Fitzgerald,Rheumatology
+13,08:00:00,13:00:00,14:00:00,19:00:00,J.R.R. Tolkien,Orthopedics
+14,09:00:00,14:00:00,15:00:00,20:00:00,C.S. Lewis,Orthopedics
+15,08:00:00,13:00:00,14:00:00,19:00:00,Oscar Wilde,Dermatology
+16,09:00:00,14:00:00,15:00:00,20:00:00,Edgar Allan Poe,Dermatology
+17,08:00:00,13:00:00,14:00:00,19:00:00,Homer,Ophthalmology
+18,09:00:00,14:00:00,15:00:00,20:00:00,Sophocles,Ophthalmology
+19,08:00:00,13:00:00,14:00:00,19:00:00,William Shakespeare,ENT
+20,09:00:00,14:00:00,15:00:00,20:00:00,Christopher Marlowe,ENT
+21,08:00:00,13:00:00,14:00:00,19:00:00,Dante Alighieri,General Surgery
+22,09:00:00,14:00:00,15:00:00,20:00:00,Giovanni Boccaccio,General Surgery
+23,08:00:00,13:00:00,14:00:00,19:00:00,Haruki Murakami,Urology
+24,09:00:00,14:00:00,15:00:00,20:00:00,Kenzaburo Oe,Urology
+25,08:00:00,13:00:00,14:00:00,19:00:00,Herman Melville,Endocrinology
+26,09:00:00,14:00:00,15:00:00,20:00:00,Nathaniel Hawthorne,Endocrinology
+27,08:00:00,13:00:00,14:00:00,19:00:00,J.D. Salinger,Psychiatry
+28,09:00:00,14:00:00,15:00:00,20:00:00,Sylvia Plath,Psychiatry
+29,08:00:00,13:00:00,14:00:00,19:00:00,Albert Camus,Oncology
+30,09:00:00,14:00:00,15:00:00,20:00:00,Jean-Paul Sartre,Oncology
+31,08:00:00,13:00:00,14:00:00,19:00:00,Leo Tolstoy,Dentistry
+32,09:00:00,14:00:00,15:00:00,20:00:00,Anton Chekhov,Dentistry
+33,08:00:00,13:00:00,14:00:00,19:00:00,Sun Tzu,Vascular Surgery
+34,09:00:00,14:00:00,15:00:00,20:00:00,Confucius,Vascular Surgery
+35,08:00:00,13:00:00,14:00:00,19:00:00,Rabindranath Tagore,Infectious Disease
+36,09:00:00,14:00:00,15:00:00,20:00:00,R.K. Narayan,Infectious Disease
+37,08:00:00,13:00:00,14:00:00,19:00:00,Thomas Hardy,Hematology
+38,09:00:00,14:00:00,15:00:00,20:00:00,D.H. Lawrence,Hematology
+39,08:00:00,13:00:00,14:00:00,19:00:00,O. Henry,Proctology
+40,09:00:00,14:00:00,15:00:00,20:00:00,Jack London,Proctology
+41,08:00:00,13:00:00,14:00:00,19:00:00,Emily Dickinson,Gynecology
+42,09:00:00,14:00:00,15:00:00,20:00:00,Louisa May Alcott,Gynecology
+43,08:00:00,13:00:00,14:00:00,19:00:00,Maya Angelou,Allergy
+44,09:00:00,14:00:00,15:00:00,20:00:00,Toni Morrison,Allergy
+45,08:00:00,13:00:00,14:00:00,19:00:00,George Bernard Shaw,Nutrition
+46,09:00:00,14:00:00,15:00:00,20:00:00,H.G. Wells,Nutrition
+47,08:00:00,13:00:00,14:00:00,19:00:00,Khalil Gibran,Hepatology
+48,09:00:00,14:00:00,15:00:00,20:00:00,Naguib Mahfouz,Hepatology
+49,08:00:00,13:00:00,14:00:00,19:00:00,A.A. Milne,Pediatrics
+50,09:00:00,14:00:00,15:00:00,20:00:00,Beatrix Potter,Pediatrics
+51,08:00:00,13:00:00,14:00:00,19:00:00,Victor Hugo,Neonatology
+52,09:00:00,14:00:00,15:00:00,20:00:00,Jules Verne,Neonatology

@@ -1,0 +1,26 @@
+/* Default state for both forms */
+.patientLoginForm,
+.patientSignupForm {
+
+  transition: max-height 0.5s cubic-bezier(0.77, 0, 0.175, 1),
+  opacity 0.5s ease,
+  transform 0.5s ease;
+}
+
+/* Show form */
+.visibleForm {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hide form */
+.hiddenForm {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.scrollable-dropdown {
+    max-height: 100px;
+    overflow-y: auto;
+}

@@ -1,0 +1,83 @@
+CREATE TABLE patientsAppt(
+id serial PRIMARY KEY,
+name varchar(255),
+age int,
+gender char(1),
+passwordHash varchar(60),
+email varchar(255),
+medicalHistory text[]
+);
+
+
+CREATE TABLE doctors(
+id serial PRIMARY KEY,
+name varchar(255),
+department varchar(255),
+passwordHash varchar(60)
+);
+
+CREATE TABLE appts(
+id serial primary key,
+patientId int not null,
+doctorId int not null,
+timePeriod tsrange not null,
+symptoms TEXT[]
+);
+
+ALTER Table appts
+ADD CONSTRAINT FKPatient
+FOREIGN KEY (patientId)
+REFERENCES patientsappt (id)
+ON DELETE CASCADE;
+
+ALTER Table appts
+ADD CONSTRAINT FKDoctor
+FOREIGN KEY (doctorId)
+REFERENCES doctors (id)
+ON DELETE CASCADE;
+
+CREATE TABLE admissions(
+    id serial primary key,
+    patientName varchar(255),
+    admissionDate date not null,
+    dischargeDate date
+)
+
+CREATE TABLE icuAddms(
+    id serial PRIMARY KEY,
+    addmId int REFERENCES admissions(id),
+    startDate date not null
+    endDate date
+)
+
+CREATE TABLE surgeries(
+    id serial PRIMARY KEY,
+    addmId int REFERENCES admissions(id),
+    date date not null
+)
+
+CREATE TABLE equipments(
+    id serial PRIMARY KEY,
+    date date not null,
+    patientMonitorsQty int not null,
+    defibQty int not null,
+    infusionPumpsQty int not null,
+    patientMonitorsUsed int,
+    defibUsed int,
+    infusionPumpsUsed int
+);
+
+CREATE TABLE staff(
+    id int,
+    name varchar(255),
+    todayDate date not null,
+    presentToday int not null,
+    neededToday int
+)
+
+CREATE TABLE bedhistorialData(
+    id int PRIMARY KEY,
+    date date not null,
+    actual int,
+    predicted int
+)

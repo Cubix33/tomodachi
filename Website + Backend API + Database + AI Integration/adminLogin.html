@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Login</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+
+    <!-- Font Awesome Icon Kit -->
+    <script src="https://kit.fontawesome.com/c45e3ad131.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand is-flex is-justify-content-space-between">
+            <a class="navbar-item title is-3 logo ostrich" href="/">
+                <figure class=" image">
+                    <img class="logoImg" src="/images/logo.png" alt="">
+                </figure>
+                <strong>APT</strong>
+            </a>
+
+
+            <div class="buttons is-hidden-desktop mx-2">
+                <a class="button " href="https://github.com/Cubix33/tomodachi">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+
+
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button " href="https://github.com/Cubix33/tomodachi">
+                            <span class="icon">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <section class="section mainContent is-fullheight is-flex is-flex-direction-column is-justify-content-center">
+        <div class="container has-text-centered my-5 is-flex-grow-0">
+            
+
+            <div class="patientLoginForm">
+                <h3 class="is-3 title">Admin Login</h3>
+                <div class="field has-text-left">
+                    <label for="" class="label">Username</label>
+                    <div class="control has-icons-left">
+                        <input class="input" type="username" name="username" id="username">
+                        <span class="icon is-small is-left">
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="field has-text-left">
+                    <label for="" class="label">Password</label>
+                    <div class="control has-icons-left">
+                        <input class="input" type="password" name="password" id="password">
+                        <span class="icon is-small is-left">
+                            <i class="fa-solid fa-key"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <button type="submit" class="button is-success is-dark is-fullwidth" id="loginBtn">Signup</button>
+
+                
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p class="subtitle">
+                <strong>APT</strong> by Anshika, Harshdip & Pratyaksh
+            </p>
+            <p><a target="_blank" href="https://icons8.com/icon/r9qA6fLGZtdf/music-robot">Music Robot</a> icon by <a
+                    target="_blank" href="https://icons8.com">Icons8</a></p>
+        </div>
+    </footer>
+
+
+</body>
+
+<!-- Patient JS -->
+<script src="js/adminLogin.js"></script>
+
+</html>

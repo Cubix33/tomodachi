@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Login</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/patientDashboard.css">
+
+
+    <!-- Font Awesome Icon Kit -->
+    <script src="https://kit.fontawesome.com/c45e3ad131.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand is-flex is-justify-content-space-between">
+            <a class="navbar-item title is-3 logo ostrich" href="/">
+                <figure class=" image">
+                    <img class="logoImg" src="/images/logo.png" alt="">
+                </figure>
+                <strong>APT</strong>
+            </a>
+
+
+            <div class="buttons is-hidden-desktop mx-2">
+                <a class="button " href="https://github.com/Cubix33/tomodachi">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+
+
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button " href="https://github.com/Cubix33/tomodachi">
+                            <span class="icon">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <section class="section mainContent is-fullheight is-flex is-flex-direction-column is-justify-content-center">
+        <div class="container   has-text-centered my-5 is-flex-grow-0">
+
+            <progress class="progress is-primary" id="loadingProgress" max="100"></progress>
+
+
+            <div id='mainContainer'>
+                <h1 class="is-1 title">Welcome, <span id="name"></span> </h1>
+                <p class="subtitle">Patient ID: <span id="id"></span>, Age: <span id="age"></span>, Gender: <span
+                        id="gender"></span></p>
+
+                <div class="overView">
+                    <article class="message is-primary">
+                        <div class="message-header ">
+                            <p>Your Upcoming Appointments</p>
+                        </div>
+                        <div class="message-body" id="appendAppts">
+                            No Upcoming Appointments
+                        </div>
+                    </article>
+
+                    <hr>
+
+                    <button id="scheduleApptBtn" class="button is-warning is-fullwidth is-medium my-5">
+                        Schedule A Appointment
+                    </button>
+                </div>
+
+                <article class="message my-2 is-warning p-3 is-hidden" id="scheduleApptDialog">
+                    <div class="message-header">
+                        <p>Schedule A Appointment</p>
+                        <button class="delete" aria-label="delete"></button>
+                    </div>
+                    <div class="message-body ">
+
+
+
+                        <div class="field has-text-left">
+                            <label for="" class="label">Symptoms</label>
+                            <p class="control has-icons-left">
+                                <span class="select is-fullwidth is-warning">
+                                    <select name="symptoms" id="symptoms">
+                                        <option value="N">Select Symptoms</option>
+                                        <option value="Headache">Headache</option>
+                                        <option value="Fever">Fever</option>
+                                        <option value="Cough">Cough</option>
+                                        <option value="Chest Pain">Chest Pain</option>
+                                        <option value="Fatigue">Fatigue</option>
+                                        <option value="Shortness of Breath">Shortness of Breath</option>
+                                        <option value="Dizziness">Dizziness</option>
+                                        <option value="Abdominal Pain">Abdominal Pain</option>
+                                        <option value="Vomiting">Vomiting</option>
+                                        <option value="Joint Pain">Joint Pain</option>
+                                        <option value="Back Pain">Back Pain</option>
+                                        <option value="Skin Rash">Skin Rash</option>
+                                        <option value="Nausea">Nausea</option>
+                                        <option value="Loss of Consciousness">Loss of Consciousness</option>
+                                        <option value="Blurred Vision">Blurred Vision</option>
+                                        <option value="Hearing Loss">Hearing Loss</option>
+                                        <option value="Swelling">Swelling</option>
+                                        <option value="Palpitations">Palpitations</option>
+                                        <option value="Frequent Urination">Frequent Urination</option>
+                                        <option value="Unexplained Weight Loss">Unexplained Weight Loss</option>
+                                    </select>
+                                </span>
+                                <span class="icon is-small is-left">
+                                    <i class="fa-solid fa-file-medical"></i>
+                                </span>
+                            </p>
+                        </div>
+
+
+                        <!-- Department -->
+                        <div class="field has-text-left">
+                            <label for="" class="label">Department</label>
+                            <p class="control has-icons-left">
+                                <span class="select is-fullwidth is-warning">
+                                    <select name="department" id="department">
+                                        <option value="None">Select Department</option>
+                                        <option value="Neurology">Neurology</option>
+                                        <option value="General Medicine">General Medicine</option>
+                                        <option value="Pulmonology">Pulmonology</option>
+                                        <option value="Cardiology">Cardiology</option>
+                                        <option value="Gastroenterology">Gastroenterology</option>
+                                        <option value="Rheumatology">Rheumatology</option>
+                                        <option value="Orthopedics">Orthopedics</option>
+                                        <option value="Dermatology">Dermatology</option>
+                                        <option value="Ophthalmology">Ophthalmology</option>
+                                        <option value="ENT">ENT</option>
+                                        <option value="General Surgery">General Surgery</option>
+                                        <option value="Urology">Urology</option>
+                                        <option value="Endocrinology">Endocrinology</option>
+                                    </select>
+                                </span>
+                                <span class="icon is-small is-left">
+                                    <i class="fa-solid fa-file-medical"></i>
+                                </span>
+                            </p>
+                        </div>
+
+                        <!-- Submit Button Field -->
+                        <button class="button my-5 is-warning is-fullwidth" id="getAvailableTimingsBtn">
+                            Book Appointment
+                        </button>
+
+
+                        <!-- <div id="consulationTimingDiv" class="is-hidden">
+                            <p class="subtitle is-4 has-text-centered">Estimated Consulation Timings: <span
+                                    id="estimateConsulTime"></span></p>
+                            <p class="subtitle is-6 m-0 has-text-centered">(click on time slot to book)</p>
+                             Available Timings 
+                            <div id="timingsContainer">
+                                <button class="button is-warning m-1 timeSlotBtn" data-tsrange="">10:00-10:45</button>
+                            </div>
+                        </div> -->
+
+                    </div>
+                </article>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p class="subtitle">
+                <strong>APT</strong> by Anshika, Harshdip & Pratyaksh
+            </p>
+            <p><a target="_blank" href="https://icons8.com/icon/r9qA6fLGZtdf/music-robot">Music Robot</a> icon by <a
+                    target="_blank" href="https://icons8.com">Icons8</a></p>
+        </div>
+    </footer>
+
+
+
+    <!-- Confirmation Appointment Modal -->
+    <div id="modalConfirmAppt" class="modal">
+        <div class="modal-background"></div>
+
+        <div class="modal-content">
+            <article class="message is-primary">
+                <div class="message-header">
+                    <p class="is-size-4">Confirm Appointment?</p>
+                    <button class="delete" aria-label="delete"></button>
+                </div>
+                <div class="message-body is-size-5" id="messageBodyConfirmAppointment">
+
+                    
+                    <div class="columns">
+                        <div class="column">
+                            Symptoms:
+                        </div>
+                        <div class="column" id="symptomsSummary">
+                            <div class="tag is-warning is-size-5" id="symptomsConfirm"></div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="columns">
+                        <div class="column">
+                            Department:
+                        </div>
+                        <div class="column">
+                            <div class="tag is-warning is-size-5" id="departmentConfirm"></div>
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="column">
+                            Date:
+                        </div>
+                        <div class="column">
+                            <div class="tag is-warning is-size-5" id="dateConfirm"></div>
+                        </div>
+                    </div>
+
+                    <p class="has-text-centered subtitle is-siz-4">We'll shortly notify you of the exact appointment timings</p>
+
+                    <button id="bookApptConfirmBtn" class="button is-success is-dark is-fullwidth">
+                        Book Appointment
+                    </button>
+                </div>
+            </article>
+        </div>
+
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <!-- Delete Appointment Confirm Modal  -->
+    <div id="modalConfirmDelete" class="modal">
+        <div class="modal-background"></div>
+
+        <div class="modal-content">
+            <article class="message is-danger">
+                <div class="message-header">
+                    <p class="is-size-4">Delete Appointment?</p>
+                    <button class="delete" aria-label="delete"></button>
+                </div>
+                <div class="message-body is-size-5" id="deleteConfirmBody">
+
+                    <h3 class="is-size-3">Appt ID: <span id="apptid">7</span></h3>
+
+                    <button class="button is-danger is-dark is-fullwidth" id="confirmDeleteBtn">
+                        Confirm Delete Appointment?
+                    </button>
+                </div>
+            </article>
+        </div>
+
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+</body>
+
+<!-- Modal JS -->
+<script src="js/modal.js"></script>
+
+<!-- Patient JS -->
+<script src="js/patientDashboard.js"></script>
+
+
+
+
+</html>

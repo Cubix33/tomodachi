@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Login</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+
+    <!-- Font Awesome Icon Kit -->
+    <script src="https://kit.fontawesome.com/c45e3ad131.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand is-flex is-justify-content-space-between">
+            <a class="navbar-item title is-3 logo ostrich" href="/">
+                <figure class=" image">
+                    <img class="logoImg" src="/images/logo.png" alt="">
+                </figure>
+                <strong>APT</strong>
+            </a>
+
+
+            <div class="buttons is-hidden-desktop mx-2">
+                <a class="button " href="https://github.com/Cubix33/tomodachi">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+
+
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button " href="https://github.com/Cubix33/tomodachi">
+                            <span class="icon">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <section class="section mainContent is-fullheight is-flex is-flex-direction-column is-justify-content-center">
+        <div class="container has-text-centered my-5 is-flex-grow-0">
+            <h1 class="is-1 title">Hospital Overview</h1>
+            <p class="subtitle">Imperial City Hospital, New Delhi</p>
+
+            <div class="overView">
+                <article class="message is-primary">
+                    <div class="message-header ">
+                        <p> Appointment Today </p>
+                    </div>
+                    <div class="message-body" id="appendAppts">
+                        <p class="subtitle">No Appointments Today</p>
+                    </div>
+                </article>
+
+
+                <article class="message is-info">
+                    <div class="message-header ">
+                        <p class="">Realtime Bed Occupancy Status</p>
+                    </div>
+                    <div class="message-body">
+                        <!-- Prediction, Occupied Today, Avaiable (700 -), ICU, Surgeries -->
+                        <h2 class="title is-2">Predicted: <span id="predictedBeds"></span> Beds</h2>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="subtitle is-3 ">Occupied Today: <span id="occupiedBeds"></span> Beds</p>
+                            </div>
+                            <div class="column">
+                                <p class="subtitle is-3">Available Today: <span id="freeBeds"></span> Beds</p>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <div class="column">
+                                <p class="subtitle is-3 ">Surgeries Today: <span id="surgeriesToday"></span> Surgeries</p>
+                            </div>
+                            <div class="column">
+                                <p class="subtitle is-3">ICU Adms Today: <span id="icuAddmsToday"></span> Addms</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </article>
+
+                <article class="message is-warning">
+                    <div class="message-header ">
+                        <p>Realtime Staff Availability Predictions</p>
+                    </div>
+                    <div class="message-body">
+                        <!-- Prediction, Required, Present , Staff Attendance Rate -->
+                        <h2 class="title is-2">Staff Predictions</h2>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="subtitle is-size-3">Doctors: <span id="doctorsPrediction"></span></p>
+                            </div>
+                            <div class="column">
+                                <p class="subtitle is-size-3">Nurses: <span id="nursesPrediction"></span></p>
+                            </div>
+                            <div class="column">
+                                <p class="subtitle is-size-3">Technicians: <span id="technicianPrediction"></span></p>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <h2 class="title is-2">Staff Attendance</h2>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="subtitle is-size-3">Doctors: <span id="doctorAttendance"></span></p>
+                            </div>
+                            <div class="column">
+                                <p class="subtitle is-size-3">Nurses: <span id="nursesAttendance"></span></p>
+                            </div>
+                            <div class="column">
+                                <p class="subtitle is-size-3">Technicians: <span id="technicianAttendance"></span></p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </article>
+
+                <article class="message is-danger">
+                    <div class="message-header ">
+                        <p>Realtime Equipment Maintaince Prediction</p>
+                    </div>
+                    <div class="message-body">
+                        <!--  Prediction, Total Usage, Availablity -->
+                        <h2 class="title is-2">Equipment Predictions</h2>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="subtitle is-size-3">Patient Monitors: <span id="patientmonitorsaipredict"></span></p>
+                            </div>
+                            <div class="column">
+                                <p class="subtitle is-size-3">Defibrillator: <span id="defibaipredict"></span></p>
+                            </div>
+                            <div class="column">
+                                <p class="subtitle is-size-3">Infusion Pumps: <span id="infusionpumpsaipredict"></span></p>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <h2 class="title is-2">Equipment Used Today</h2>
+                        <div class="columns">
+                            <div class="column">
+                                <p class="subtitle is-size-3">Patient Monitors: <span id="patientmonitorsused"></span></p>
+                            </div>
+                            <div class="column">
+                                <p class="subtitle is-size-3">Defibrillator: <span id="defibused"></span></p>
+                            </div>
+                            <div class="column">
+                                <p class="subtitle is-size-3">Infusion Pumps: <span id="infusionpumpsused"></span></p>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </article>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p class="subtitle">
+                <strong>APT</strong> by Anshika, Harshdip & Pratyaksh
+            </p>
+            <p><a target="_blank" href="https://icons8.com/icon/r9qA6fLGZtdf/music-robot">Music Robot</a> icon by <a
+                    target="_blank" href="https://icons8.com">Icons8</a></p>
+        </div>
+    </footer>
+
+
+   
+
+</body>
+
+
+<!-- Modal JS -->
+<script src="js/modal.js"></script>
+
+<!-- Admin Dashboard JS -->
+ <script src="js/adminDashboard.js"></script>
+
+</html>
