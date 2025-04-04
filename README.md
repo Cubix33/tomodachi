@@ -38,6 +38,6 @@ This README provides an overview of the project, including team details, relevan
 
 ## Project Links
 
-- **Presentation:** [View Presentation](https://drive.google.com/file/d/1UgKifbyKIc3lCupvkORhDciF1jo4OTDd/view?usp=sharing)
+- **Presentation:** [View Presentation](https://drive.google.com/file/d/1Xihd-g8wfIgyXKH5BRPVRSEdZoiy9lMr/view?usp=sharing)
 - **Video Demonstration:** [Watch Video](https://youtu.be/m4iRFVQgKn4)
 - **Source Code:** [GitHub Repository](https://github.com/Cubix33/tomodachi)
