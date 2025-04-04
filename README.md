@@ -1,10 +1,37 @@
-# APT
+# APT - ACCURATE, PRECISE, TIMELY: An AI-Driven Patient Appointment and Hospital Resource Optimization System
 
-The AI-Driven Patient Appointment & Hospital Resource Optimization System is an advanced healthcare management solution that schedules doctor consultations based on the predicted severity of a patient's condition. Using machine learning models, it prioritizes high-severity patients for earlier appointments while ensuring alignment with doctor availability and shift timings. The system prevents scheduling conflicts, manages doctor breaks, and enforces a 48-hour appointment confirmation rule, allowing only walk-in and emergency bookings afterward. Additionally, an admin panel provides real-time insights into hospital resources, including beds, equipment, and staff, and leverages LSTM and ARIMA models to predict the next day’s resource requirements. At the end of each day, hospital staff update actual resource usage, refining future predictions. This AI-powered system enhances patient care, optimizes hospital workflows, and improves resource planning, leading to efficient hospital operations and better healthcare outcomes.
+This README provides an overview of the project, including team details, relevant links, tasks completed, tech stack, key features, and steps to run the project locally.
 
+## Team Details
 
+**Team Name:** Tomodachi
 
+**Project Title** - APT: Accurate, Precise, Timely 
 
+**Team Leader:** [@HARSHDIPSAHA](https://github.com/HARSHDIPSAHA)
 
+**Team Members:**
 
+- **PRATYAKSH KUMAR** - [@LONEWOLF4713](https://github.com/LoneWolf4713)
+- **ANSHIKA SINGH** - [@CUBIX33](https://github.com/CUBIX33)
+- **HARSHDIP SAHA** - [@HARSHDIPSAHA](https://github.com/HARSHDIPSAHA)
 
+**PROJECT DESCRIPTION** - This system addresses the inefficiencies in current healthcare diagnostics and management by implementing AI models that can analyze patient data for more accurate and timely diagnosis, offer predictive insights for preventive care. This automation reduces human error, improves decision-making, and enhances patient care.The project is running fine on local host and the frontend part is deployed.
+
+**TECHNOLOGIES USED** :- <br>
+*1. Flask* <br>
+*2. Tensorflow* <br>
+*3. XGBoost* <br>
+*4. Scikit-learn* <br>
+*5. HTML* <br>
+*6. CSS* <br>
+*7. Statsmodels* <br>
+*8. Bulma* <br>
+*9. Matplotlib* <br>
+*10. PostgreSQL* <br>
+
+## Project Links
+
+- **Presentation:** [View Presentation](https://drive.google.com/file/d/1UgKifbyKIc3lCupvkORhDciF1jo4OTDd/view?usp=sharing)
+- **Video Demonstration:** [Watch Video](https://youtu.be/m4iRFVQgKn4)
+- **Source Code:** [GitHub Repository](https://github.com/Cubix33/tomodachi)
