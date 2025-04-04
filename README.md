@@ -30,11 +30,11 @@ This README provides an overview of the project, including team details, relevan
 *9. Matplotlib* <br>
 *10. PostgreSQL* <br>
 
-![HOME PAGE](https://drive.google.com/file/d/13QHnd9lK_8dEMjghrQ4ftyA7KnyelXKM)
-![ADMIN DASHBOARD](https://drive.google.com/file/d/1jJ5xK_rW6G003xmEwOxD1gPOpEar_AxG)
-![EQUIPMENT PREDICTIONS IN REAL TIME](https://drive.google.com/file/d/1sFu1IjoRj2qbXAgNf13ecg6SqvbHbbe_)
-![STAFF AVAILABILITY PREDICTIONS](https://drive.google.com/file/d/1B0kSY1P4vbY1dvxd50cl2wFZqI0_VFfc)
-![SIGNUP PAGE AS PATIENT](https://drive.google.com/file/d/1jCgM-5afyRWLkQsFDWUGFfzyAemVkrx-)
+![HOME PAGE](https://drive.google.com/uc?export=view&id=13QHnd9lK_8dEMjghrQ4ftyA7KnyelXKM)
+![ADMIN DASHBOARD](https://drive.google.com/uc?export=view&id=1jJ5xK_rW6G003xmEwOxD1gPOpEar_AxG)
+![EQUIPMENT PREDICTIONS IN REAL TIME](https://drive.google.com/uc?export=view&id=1sFu1IjoRj2qbXAgNf13ecg6SqvbHbbe_)
+![STAFF AVAILABILITY PREDICTIONS](https://drive.google.com/uc?export=view&id=1B0kSY1P4vbY1dvxd50cl2wFZqI0_VFfc)
+![SIGNUP PAGE AS PATIENT](https://drive.google.com/uc?export=view&id=1jCgM-5afyRWLkQsFDWUGFfzyAemVkrx-)
 
 ## Project Links
 
